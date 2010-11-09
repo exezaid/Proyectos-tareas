@@ -1,4 +1,4 @@
 class Task < ActiveRecord::Base
   belongs_to :project
-  validates :task, :presence => true, :uniqueness => true
+  validates :name, :presence => true, :uniqueness => true
 end
